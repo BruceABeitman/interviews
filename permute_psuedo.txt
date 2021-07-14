@@ -1,0 +1,27 @@
+original = {a, b, c}
+
+=> []
+=> [a]
+=> [[ab], [ba]]
+=> [[abc, acb, cab], [bac, bca, cba]]
+=> [[abcd, abdc, adbc, dabc], [acbd, acdb, adcb, dacb], [cabd, cadb, cdab, dcab], 
+    [bacd, badc, bdac, dbac], [bcad, bcda, bdca, dbca], [cbad, cbda, cdba, dcba]]
+
+// Main function 
+// Takes a list of letters to permute, denoted original
+// Returns a list of list of letters representing all combinations of original letters
+  // Create empty list of list of letters, denoted permuted
+  // For each letter in original
+    // Weave letter into permuted list with weave function
+  // return permuted list
+
+// Weave function 
+// Takes a list of list of letters, denoted temp
+// Takes a letter to weave, denoted lett
+// Returns a list of list of letters representing the lists weaved with the passed letter
+  // Create empty list of list of letters, denoted tmp_permuted
+  // For each list of temp, denoted temp_list
+    // Create copy of temp_list
+    // inserts lett at each index of the temp_list
+    // append tmp_list copy to tmp_purmuted
+  // returns list of list of letters

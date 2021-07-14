@@ -1,0 +1,15 @@
+// For each word in dictionary
+  // buildTree(root of tree, word)
+
+// BuildTree adds the passed word recursively to the passed tree (head)
+func buildTree(head *node, word string, index int) error {
+	// If index is the length of the word -> base case return out
+	// ** Determine if node (current head) contains next char (letter of word @ index)
+  // For each node under the current head
+		// If next node exists, set it to current head
+	// If we did not find the current letter
+    // add this new child node to head
+		// AND make that the new head (for correct recursive traversal)
+	// If we are at end of word update current node to be complete
+	// Move to the next letter in word (recursive call)
+}
